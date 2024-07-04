@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tablaDatos" layoutX="200.0" layoutY="135.0" maxHeight="450" maxWidth="680" minHeight="450.0" minWidth="680.0" prefHeight="450.0" prefWidth="680.0" />
+      <Button layoutX="475.0" layoutY="617.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" text="Añadir Ingrediente" />
+      <Label layoutX="339.0" layoutY="41.0" prefHeight="81.0" prefWidth="402.0" text="Listado Ingredientes">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <HBox layoutY="686.0" prefHeight="31.0" prefWidth="301.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Ingredientes" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Platos" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Menus Semanales" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
