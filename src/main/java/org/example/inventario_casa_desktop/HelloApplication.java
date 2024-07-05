@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.example.inventario_casa_desktop.Controlador.IngredientesController;
 
 import java.io.IOException;
 
@@ -15,10 +14,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Vista/Ingredientes.fxml"));
         Parent root = fxmlLoader.load();
 
-        IngredientesController controladorIngredientes = new IngredientesController();
-        controladorIngredientes.cargarIngredientes();
-
-        Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
+        Scene scene = new Scene(root, 1080, 720);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();

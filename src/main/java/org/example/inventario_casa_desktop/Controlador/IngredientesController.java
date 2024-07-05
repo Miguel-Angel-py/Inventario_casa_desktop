@@ -8,12 +8,16 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.example.inventario_casa_desktop.Modelo.IngredienteModel;
 
-public class IngredientesController {
+public class IngredientesController{
     @FXML
     private TableView<IngredienteModel> tablaDatos;
 
     @FXML
-    public void cargarIngredientes(){
+    private void initialize(){
+        cargarIngredientes();
+    }
+    @FXML
+    protected void cargarIngredientes(){
         TableColumn<IngredienteModel, String> columnaNombre = new TableColumn<>("Nombre");
         columnaNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         TableColumn<IngredienteModel, Integer> columnaCantidad = new TableColumn<>("Cantidad");
