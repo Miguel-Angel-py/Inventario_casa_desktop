@@ -10,4 +10,6 @@ module org.example.inventario_casa_desktop {
     exports org.example.inventario_casa_desktop;
     exports org.example.inventario_casa_desktop.Controlador;
     opens org.example.inventario_casa_desktop.Controlador to javafx.fxml;
+    exports org.example.inventario_casa_desktop.Modelo;
+    opens org.example.inventario_casa_desktop.Modelo to javafx.fxml;
 }

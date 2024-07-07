@@ -7,7 +7,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.inventario_casa_desktop.Controlador.IngredientesController">
    <children>
       <TableView fx:id="tablaDatos" layoutX="200.0" layoutY="135.0" maxHeight="450" maxWidth="680" minHeight="450.0" minWidth="680.0" prefHeight="450.0" prefWidth="680.0" />
-      <Button layoutX="475.0" layoutY="617.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" text="Añadir Ingrediente" />
+      <Button fx:id="addIngrediente" layoutX="475.0" layoutY="617.0" mnemonicParsing="false" onAction="#onAddIngredienteButtonClick" prefHeight="55.0" prefWidth="130.0" text="Añadir Ingrediente" />
       <Label layoutX="339.0" layoutY="41.0" prefHeight="81.0" prefWidth="402.0" text="Listado Ingredientes">
          <font>
             <Font name="System Bold" size="40.0" />

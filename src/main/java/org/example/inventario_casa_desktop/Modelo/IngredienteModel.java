@@ -11,7 +11,13 @@ public class IngredienteModel {
         Nombre = nombre;
         Cantidad = cantidad;
     }
+
     public IngredienteModel(){}
+
+    public IngredienteModel(String nombre, int cantidad){
+        this.Nombre = nombre;
+        this.Cantidad = cantidad;
+    }
 
     public int getId() {
         return Id;
@@ -35,5 +41,14 @@ public class IngredienteModel {
 
     public void setCantidad(int cantidad) {
         Cantidad = cantidad;
+    }
+
+    @Override
+    public String toString() {
+        return "IngredienteModel{" +
+                "Id=" + Id +
+                ", Nombre='" + Nombre + '\'' +
+                ", Cantidad=" + Cantidad +
+                '}';
     }
 }

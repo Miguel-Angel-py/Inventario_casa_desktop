@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.inventario_casa_desktop.Controlador.AddIngredienteController">
+   <children>
+      <Button fx:id="botonAceptar" layoutX="283.0" layoutY="341.0" mnemonicParsing="false" onAction="#anadirIngrediente" text="V" />
+      <Label layoutX="167.0" layoutY="30.0" text="Añadir Ingrediente">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNombre" layoutX="226.0" layoutY="135.0" />
+      <TextField fx:id="tfCantidad" layoutX="226.0" layoutY="222.0" onKeyTyped="#valSoloInts" />
+      <Label layoutX="226.0" layoutY="205.0" text="Cantidad" />
+      <Label layoutX="226.0" layoutY="118.0" text="Nombre" />
+      <Label fx:id="labelSoloInts" layoutX="226.0" layoutY="247.0" text="No puede contener letras." textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
