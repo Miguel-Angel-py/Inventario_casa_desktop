@@ -5,6 +5,7 @@ module org.example.inventario_casa_desktop {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires org.mongodb.driver.sync.client;
 
     opens org.example.inventario_casa_desktop to javafx.fxml;
     exports org.example.inventario_casa_desktop;
