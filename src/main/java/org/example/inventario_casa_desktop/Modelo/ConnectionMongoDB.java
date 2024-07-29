@@ -6,11 +6,7 @@ import com.mongodb.client.MongoDatabase;
 
 public class ConnectionMongoDB {
     public MongoClient getConnectionMongo(){
-        return MongoClients.create("mongodb://localhost:27017");
-    }
-
-    private MongoDatabase getOrCreateDatabase(MongoClient mongoClient, String databaseName){
-        return mongoClient.getDatabase(databaseName);
+        return MongoClients.create("mongodb://localhost:27017/Platos");
     }
 
     private MongoCollection getOrCreateCollection(MongoDatabase mongoDatabase, String collectionName){

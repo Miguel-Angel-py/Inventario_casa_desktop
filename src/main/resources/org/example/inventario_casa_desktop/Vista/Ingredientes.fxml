@@ -13,12 +13,6 @@
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <HBox layoutY="686.0" prefHeight="31.0" prefWidth="301.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Ingredientes" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Platos" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Menus Semanales" />
-         </children>
-      </HBox>
+      <Button fx:id="botonPlatos" layoutX="14.0" layoutY="681.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Platos" />
    </children>
 </AnchorPane>

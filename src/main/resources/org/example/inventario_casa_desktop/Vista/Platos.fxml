@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.inventario_casa_desktop.Controlador.PlatosController">
+   <children>
+      <Label layoutX="482.0" layoutY="65.0" text="Platos">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaPlatos" layoutX="410.0" layoutY="139.0" prefHeight="442.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id="columnaPlatos" prefWidth="260.0" text="Plato" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonIngredientes" layoutX="14.0" layoutY="681.0" mnemonicParsing="false" text="Ingredientes" />
+   </children>
+</AnchorPane>
